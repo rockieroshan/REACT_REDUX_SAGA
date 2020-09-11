@@ -1,0 +1,23 @@
+.Location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  .locationImgDegree {
+    .degree {
+      font-size: 14vw;
+      margin-top: -54px;
+    }
+    .locationGrp {
+      display: flex;
+      .location-img {
+        width: 20px;
+      }
+    }
+  }
+  .cloud {
+    img {
+      width: 4em;
+    }
+  }
+}

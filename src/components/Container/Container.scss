@@ -1,0 +1,29 @@
+$ErrorColor: #ff0000;
+
+.FlexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.weatherContainer {
+  @extend .FlexCenter;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.noInput {
+  @extend .FlexCenter;
+  margin-top: 15%;
+  .noLocation {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .locationError {
+    @extend .noLocation;
+    color: $ErrorColor;
+    text-transform: capitalize;
+  }
+  img {
+    width: 20px;
+  }
+}

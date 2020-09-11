@@ -1,0 +1,11 @@
+$TempColor: #212529;
+
+.TempContainer {
+  margin: 18px 0;
+  font-size: 14px;
+  color: $TempColor;
+  .temp {
+    margin: 0 3px;
+    font-weight: 700;
+  }
+}

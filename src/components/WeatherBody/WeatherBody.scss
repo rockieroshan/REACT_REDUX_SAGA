@@ -1,0 +1,52 @@
+.WeatherBody {
+  margin: 0 15px;
+  padding: 10px 50px;
+  transition: 0.3s all ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(128, 128, 128, 0.1) inset;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 15px 19px -1px rgba(31, 31, 31, 0.5);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .weatherContainer {
+    flex-direction: column;
+    .WeatherBody {
+      margin: 2%;
+      width: 56%;
+    }
+  }
+  .Location {
+    .locationImgDegree {
+      .degree {
+        margin-top: -38px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .SearchBar {
+    .search-bar-input {
+      width: 10em !important;
+    }
+  }
+  .weatherContainer {
+    flex-direction: column;
+    .WeatherBody {
+      margin: 2%;
+      width: 56%;
+    }
+  }
+  .Location {
+    .locationImgDegree {
+      .degree {
+        margin-top: -13px !important;
+      }
+    }
+    .cloud {
+      margin-left: 2% !important;
+    }
+  }
+}
